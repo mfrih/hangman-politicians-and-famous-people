@@ -1,22 +1,17 @@
 const characters = [
   {
-    firstName: "Patrick",
-    lastName: "Balkany",
+    name: "Patrick Balkany",
   },
   {
-    firstName: "Jérôme",
-    lastName: "Cahuzac",
+    name: "Jerome Cahuzac ",
   },
   {
-    firstName: "Bernard",
-    lastName: "Tapie",
+    name: "Bernard Tapie",
   },
   {
-    firstName: "Jean",
-    lastName: "Tiberi",
+    name: "Jean Tiberi",
   },
   {
-    firstName: "Claude",
-    lastName: "Guéant",
+    name: "Claude Gueant",
   },
 ];
