@@ -14,6 +14,7 @@ function startGame() {
   const hiddenCharacter = generateLetterCells(chosenCharacter.name);
   //   console.log(chosenCharacter);
   displayName(hiddenCharacter);
+  displayKeyboard(alphabetArray);
 }
 
 function pickCharacter() {

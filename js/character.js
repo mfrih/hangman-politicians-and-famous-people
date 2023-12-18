@@ -1,17 +1,17 @@
 const characters = [
   {
-    name: "Patrick Balkany",
+    name: "PATRICK BALKANY",
   },
   {
-    name: "Jerome Cahuzac ",
+    name: "JEROME CAHUZAC ",
   },
   {
-    name: "Bernard Tapie",
+    name: "BERNARD TAPIE",
   },
   {
-    name: "Jean Tiberi",
+    name: "JEAN TIBERI",
   },
   {
-    name: "Claude Gueant",
+    name: "CLAUDE GUEANT",
   },
 ];
