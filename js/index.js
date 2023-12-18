@@ -8,4 +8,11 @@ startButton.addEventListener("click", startGame);
 function startGame() {
   startPage.classList.add("hidden");
   gamePage.classList.remove("hidden");
+  pickCharacter();
 }
+
+// function pickCharacter() {
+//   const characterIndex = Math.floor(Math.random() * characters.length);
+//   const chosenCharacter = characters.splice(characterIndex, 1);
+//   console.log(chosenCharacter());
+// }
