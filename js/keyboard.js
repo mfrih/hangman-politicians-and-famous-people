@@ -35,5 +35,6 @@ function displayKeyboard(arr) {
     letterButton.textContent = letter;
     letterButton.classList.add("unique-letter-button");
     keyboardButtons.append(letterButton);
+    letterButton.addEventListener("click", playLetter);
   }
 }

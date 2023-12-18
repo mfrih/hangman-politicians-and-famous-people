@@ -64,3 +64,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.try-counter-sentence {
+  color: brown;
+  font-size: 20px;
+}
