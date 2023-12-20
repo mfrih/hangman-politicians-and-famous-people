@@ -2,11 +2,12 @@ const characters = [
   {
     name: "PATRICK BALKANY",
     hints: [
-      "I'm the king of Levallois",
-      "Avec Isabelle, nous habitons dans un petit moulin qui ne paie pas de mine",
+      "I'm the king of Levallois !!!",
+      "Avec Isabelle, nous habitons dans un petit moulin qui ne paie pas de mine.",
       "Jacques est un vieil ami. Je lui dois ma carrière !",
-      "J'aime le pamplemousse au Liechtenstein",
+      "J'aime le pamplemousse au Liechtenstein.",
     ],
+    nickname: "Patoche",
     photoLoose: "../images/happy-patrick.png",
     photoWin: "../images/patrick-balkany-chaunu.png",
     more: [

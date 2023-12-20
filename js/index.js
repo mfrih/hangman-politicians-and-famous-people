@@ -9,11 +9,13 @@ const hintImage = document.querySelector(".hint-gif");
 const gameResultElement = document.getElementById("game-result");
 const characterPicture = document.getElementById("character-pic");
 const characterRevealSentence = document.getElementById("character-reveal");
+const restartButton = document.getElementById("restart-button");
 let chosenCharacter = undefined;
 let hiddenCharacterArr = undefined;
 let tryCounter = 5;
 
 startButton.addEventListener("click", startGame);
+restartButton.addEventListener("click", restartGame);
 
 function startGame() {
   startPage.classList.add("hidden");
@@ -55,8 +57,12 @@ function displayHiddenName(arr) {
 
 function displayTryCounter() {
   let tryCounterSentence = document.createElement("p");
-  tryCounterSentence.textContent = `${tryCounter} essais restants`;
-  //   tryCounterSentence.textContent = `Il vous reste ${tryCounter} essais avant que je ne m'enfuie avec l'argent 💸`;
+  if (tryCounter <= 5 && tryCounter > 1) {
+    tryCounterSentence.textContent = `${tryCounter} essais restants`;
+  }
+  if (tryCounter === 1) {
+    tryCounterSentence.textContent = `${tryCounter} essai restant`;
+  }
   tryCounterSentence.classList.add("try-counter-sentence", "shake-horizontal");
   //   tryCounterSentence.classList.add("shake-horizontal");
   tryCounterElement.append(tryCounterSentence);
@@ -82,8 +88,11 @@ function playLetter(event) {
       hintElement.textContent = chosenCharacter.hints[tryCounter - 1];
       //   hintElement.classList.add("slide-in-left");
     }
-    if (tryCounter <= 2) {
+    if (tryCounter <= 3 && tryCounter > 1) {
       hintImage.src = "../images/simpsons-mayor-dollar-sack.gif";
+    }
+    if (tryCounter === 1) {
+      hintImage.src = "../images/mayor-quimby-screwed.gif";
     }
 
     if (tryCounter === 0) {
@@ -100,15 +109,20 @@ function playLetter(event) {
 function showVictoryScreen() {
   gamePage.classList.add("hidden");
   endPage.classList.remove("hidden");
-  gameResultElement.textContent = `Bravooooo. Quel jugement implacable !`;
+  gameResultElement.textContent = `Bravooooo. Quel jugement implacable pour ${chosenCharacter.name} !`;
   characterPicture.src = chosenCharacter.photoWin;
-  characterRevealSentence.textContent = `Grâce à toi, ${chosenCharacter.name} paie enfin pour ses actes . On sait que l'on peut faire confiance à la justice de ce pays.`;
+  characterRevealSentence.textContent = `Grâce à toi, ${chosenCharacter.nickname} paie enfin pour ses actes . On sait que l'on peut faire confiance à la justice de ce pays.`;
 }
 
 function showGameOverScreen() {
   gamePage.classList.add("hidden");
   endPage.classList.remove("hidden");
-  gameResultElement.textContent = `Oh noooon, comment as-tu pu le laisser s'échapper comme ça ?`;
+  gameResultElement.textContent = `Oh noooon, comment as-tu pu laisser ${chosenCharacter.name} s'en sortir aussi facilement ?`;
   characterPicture.src = chosenCharacter.photoLoose;
-  characterRevealSentence.textContent = `À cause de toi, ${chosenCharacter.name} peut aller faire la fête à Ibiza en toute impunité 🏝️`;
+  characterRevealSentence.textContent = `À cause de toi, ${chosenCharacter.nickname} peut aller faire la fête à Ibiza en toute impunité 🏝️`;
+}
+
+function restartGame() {
+  endPage.classList.add("hidden");
+  startPage.classList.remove("hidden");
 }
