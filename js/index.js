@@ -31,8 +31,10 @@ function startGame() {
 
 function pickCharacter() {
   const characterIndex = Math.floor(Math.random() * characters.length);
-  const chosenCharacter = characters.splice(characterIndex, 1);
-  return chosenCharacter[0];
+  //   const chosenCharacter = characters.splice(characterIndex, 1);
+  const chosenCharacter = characters[characterIndex];
+  //   return chosenCharacter[0];
+  return characters[characterIndex];
 }
 
 function generateLetterCells(name) {
@@ -124,5 +126,15 @@ function showGameOverScreen() {
 
 function restartGame() {
   endPage.classList.add("hidden");
-  startPage.classList.remove("hidden");
+  gamePage.classList.remove("hidden");
+  chosenCharacter = undefined;
+  hiddenCharacterArr = undefined;
+  tryCounter = 5;
+  nameToGuessElement.innerHTML = "";
+  hintElement.textContent =
+    "Je refuse de vous parler espèce de justiciers. Je suis INNOCENT !!!";
+  hintImage.src = "../images/mayor-quimby-the-simpsons.gif";
+  tryCounterElement.innerHTML = "";
+  keyboardButtons.innerHTML = "";
+  startGame();
 }
