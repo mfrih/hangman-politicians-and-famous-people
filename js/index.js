@@ -31,10 +31,10 @@ function startGame() {
 
 function pickCharacter() {
   const characterIndex = Math.floor(Math.random() * characters.length);
-  //   const chosenCharacter = characters.splice(characterIndex, 1);
-  const chosenCharacter = characters[characterIndex];
-  //   return chosenCharacter[0];
-  return characters[characterIndex];
+  const chosenCharacter = characters.splice(characterIndex, 1);
+  //   const chosenCharacter = characters[characterIndex];
+  return chosenCharacter[0];
+  //   return characters[characterIndex];
 }
 
 function generateLetterCells(name) {
