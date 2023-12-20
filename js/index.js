@@ -4,6 +4,11 @@ const endPage = document.getElementById("end-screen");
 const startButton = document.getElementById("start-button");
 const nameToGuessElement = document.getElementById("name-to-guess");
 const tryCounterElement = document.getElementById("try-counter");
+const hintElement = document.getElementById("hint");
+const hintImage = document.querySelector(".hint-gif");
+const gameResultElement = document.getElementById("game-result");
+const characterPicture = document.getElementById("character-pic");
+const characterRevealSentence = document.getElementById("character-reveal");
 let chosenCharacter = undefined;
 let hiddenCharacterArr = undefined;
 let tryCounter = 5;
@@ -32,7 +37,7 @@ function generateLetterCells(name) {
   let characterArray = name.split("");
   for (let i = 0; i < characterArray.length; i++) {
     if (characterArray[i] === " ") {
-      characterArray[i] = " ";
+      characterArray[i] = " 💸💸💸 ";
     } else {
       characterArray[i] = "_";
     }
@@ -50,8 +55,10 @@ function displayHiddenName(arr) {
 
 function displayTryCounter() {
   let tryCounterSentence = document.createElement("p");
-  tryCounterSentence.textContent = `Il vous reste ${tryCounter} essais avant que je ne m'enfuis avec l'argent 💸`;
-  tryCounterSentence.classList.add("try-counter-sentence");
+  tryCounterSentence.textContent = `${tryCounter} essais restants`;
+  //   tryCounterSentence.textContent = `Il vous reste ${tryCounter} essais avant que je ne m'enfuie avec l'argent 💸`;
+  tryCounterSentence.classList.add("try-counter-sentence", "shake-horizontal");
+  //   tryCounterSentence.classList.add("shake-horizontal");
   tryCounterElement.append(tryCounterSentence);
 }
 
@@ -71,6 +78,14 @@ function playLetter(event) {
     }
   } else {
     tryCounter--;
+    if (tryCounter <= 4 && tryCounter > 0) {
+      hintElement.textContent = chosenCharacter.hints[tryCounter - 1];
+      //   hintElement.classList.add("slide-in-left");
+    }
+    if (tryCounter <= 2) {
+      hintImage.src = "../images/simpsons-mayor-dollar-sack.gif";
+    }
+
     if (tryCounter === 0) {
       showGameOverScreen();
     }
@@ -85,11 +100,15 @@ function playLetter(event) {
 function showVictoryScreen() {
   gamePage.classList.add("hidden");
   endPage.classList.remove("hidden");
-  console.log("Youpie t'as gagné");
+  gameResultElement.textContent = `Bravooooo. Quel jugement implacable !`;
+  characterPicture.src = chosenCharacter.photoWin;
+  characterRevealSentence.textContent = `Grâce à toi, ${chosenCharacter.name} paie enfin pour ses actes . On sait que l'on peut faire confiance à la justice de ce pays.`;
 }
 
 function showGameOverScreen() {
   gamePage.classList.add("hidden");
   endPage.classList.remove("hidden");
-  console.log("Youpie t'as perdu");
+  gameResultElement.textContent = `Oh noooon, comment as-tu pu le laisser s'échapper comme ça ?`;
+  characterPicture.src = chosenCharacter.photoLoose;
+  characterRevealSentence.textContent = `À cause de toi, ${chosenCharacter.name} peut aller faire la fête à Ibiza en toute impunité 🏝️`;
 }

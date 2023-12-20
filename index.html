@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Hang the patriarchy!</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/bigclaw");
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Covered+By+Your+Grace&family=Orbitron&family=Risque&display=swap");
+    </style>
   </head>
 
   <body>
@@ -16,35 +21,50 @@
           alt="politicians behind bars caricature"
           class="logo-img"
         />
-        <h1 id="game-title">TOUS EN PRISON !!!</h1>
-        <h2>
+        <h1 id="game-title">
           Aide la magistrate la plus connue de France à mener l'enquête et à
           juger nos chers politiciens
-        </h2>
-        <p>
-          Il te faudra deviner le prénom et nom de chaque politicien véreux ou
-          de personnalité ayant des démêlés avec la justice pour gagner ta
-          partie en moins de 10 essais.
-        </p>
-
-        <p>
+        </h1>
+        <p class="start-text">
+          Devine le prénom et lenom de chaque politicien véreux pour gagner ta
+          partie en 5 essais maximum. <br />
           Ouvre bien les yeux, ces charmants messieurs sont si intelligents
           qu'ils laissent traîner plein d'indices pouvant t'aider.
         </p>
+
+        <p class="start-text"></p>
 
         <button id="start-button">Commencer 👩🏽‍⚖️</button>
       </div>
       <!-- this is the GAME screen  -->
       <div id="game-screen" class="hidden">
-        <h1>Que le jugement commence !</h1>
-        <h2>À vous de deviner</h2>
+        <h1>🏛 Que le jugement commence ! 🏛</h1>
         <section id="name-to-guess"></section>
+        <section id="hints-wrapper">
+          <img
+            class="hint-gif"
+            src="./images/mayor-quimby-the-simpsons.gif"
+            alt="mayor-quimby-simpsons-gif"
+          />
+          <blockquote id="hint">
+            Je refuse de vous parler espèce de justiciers.
+            <br />Je suis INNOCENT !!!
+          </blockquote>
+        </section>
+
         <section id="try-counter"></section>
         <section id="keyboard-buttons"></section>
       </div>
       <!-- this is the END screen  -->
       <div id="end-screen" class="hidden">
-        <h1>Page de résultat</h1>
+        <h1>⚖️ La décision de Mme la juge ⚖️</h1>
+        <h2 id="game-result"></h2>
+        <img id="character-pic" src="" alt="" />
+        <section id="character-reveal"></section>
+        <section id="know-more">
+          <h3>Pour en savoir plus sur les différentes affaires :</h3>
+          <ul id="know-more-links"></ul>
+        </section>
       </div>
     </main>
     <script type="text/javascript" src="./js/keyboard.js"></script>
