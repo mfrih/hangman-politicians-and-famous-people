@@ -91,10 +91,10 @@ function playLetter(event) {
       //   hintElement.classList.add("slide-in-left");
     }
     if (tryCounter <= 3 && tryCounter > 1) {
-      hintImage.src = "../images/simpsons-mayor-dollar-sack.gif";
+      hintImage.src = "./images/simpsons-mayor-dollar-sack.gif";
     }
     if (tryCounter === 1) {
-      hintImage.src = "../images/mayor-quimby-screwed.gif";
+      hintImage.src = "./images/mayor-quimby-screwed.gif";
     }
 
     if (tryCounter === 0) {
@@ -133,7 +133,7 @@ function restartGame() {
   nameToGuessElement.innerHTML = "";
   hintElement.textContent =
     "Je refuse de vous parler espèce de justiciers. Je suis INNOCENT !!!";
-  hintImage.src = "../images/mayor-quimby-the-simpsons.gif";
+  hintImage.src = "./images/mayor-quimby-the-simpsons.gif";
   tryCounterElement.innerHTML = "";
   keyboardButtons.innerHTML = "";
   startGame();

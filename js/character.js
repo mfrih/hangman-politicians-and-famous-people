@@ -8,8 +8,8 @@ const characters = [
       "J'ai réussi à faire pousser du pamplemousse au Liechtenstein.",
     ],
     nickname: "Patoche",
-    photoLoose: "../images/happy-patrick.png",
-    photoWin: "../images/patrick-balkany-chaunu.png",
+    photoLoose: "./images/happy-patrick.png",
+    photoWin: "./images/patrick-balkany-chaunu.png",
     // more: [
     //   {
     //     title: "Tout comprendre à l’affaire Balkany",
@@ -35,8 +35,8 @@ const characters = [
       "Je suis une star des implants capilaires !",
     ],
     nickname: "Jéjé",
-    photoLoose: "../images/happy-jerome.png",
-    photoWin: "../images/sad-jerome.jpg",
+    photoLoose: "./images/happy-jerome.png",
+    photoWin: "./images/sad-jerome.jpg",
   },
   {
     name: "BERNARD TAPIE",
@@ -47,8 +47,8 @@ const characters = [
       "♬ J'ai été chanteur à mes débuts ♬",
     ],
     nickname: "Nanard (paix à son âme)",
-    photoLoose: "../images/hommage-tapie.jpg",
-    photoWin: "../images/hommage-tapie.jpg",
+    photoLoose: "./images/hommage-tapie.jpg",
+    photoWin: "./images/hommage-tapie.jpg",
   },
   {
     name: "JEAN TIBERI",
@@ -59,8 +59,8 @@ const characters = [
       "J'aime les HLM parisiens, je les utilise à toutes les sauces : loger mes enfants, financer mon parti...",
     ],
     nickname: "Jeannot",
-    photoLoose: "../images/Tiberi-proces.jpg",
-    photoWin: "../images/Tiberi-proces.jpg",
+    photoLoose: "./images/Tiberi-proces.jpg",
+    photoWin: "./images/Tiberi-proces.jpg",
   },
   {
     name: "FRANCOIS FILLON",
@@ -71,8 +71,8 @@ const characters = [
       "J'aime les costumes bien taillés.",
     ],
     nickname: "le Thatcher de la Sarthe",
-    photoLoose: "../images/happy-francois.png",
-    photoWin: "../images/sad-francois.png",
+    photoLoose: "./images/happy-francois.png",
+    photoWin: "./images/sad-francois.png",
   },
   // {
   //   name: "CLAUDE GUEANT",
