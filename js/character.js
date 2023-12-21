@@ -60,7 +60,6 @@ const characters = [
     photoWin: "./images/sad-francois.png",
   },
 
-  // need to populate with pictures
   {
     name: "CLAUDE GUEANT",
     hints: [
@@ -70,8 +69,8 @@ const characters = [
       "J'ai commencé directeur de cabinet de celui à qui je dois toutes mes affaires judiciaires, merci à lui !",
     ],
     nickname: "Monsieur 500 euros",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/gueant.jpeg",
+    photoWin: "./images/gueant.jpeg",
   },
 
   {
@@ -83,8 +82,8 @@ const characters = [
       "Je pense que je suis flic, mais en fait, non 🤷🏻 !",
     ],
     nickname: "Alex et sa bande",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/benalla.jpg",
+    photoWin: "./images/benalla.jpg",
   },
 
   {
@@ -97,8 +96,8 @@ const characters = [
     ],
     nickname:
       "Richard Fillon (les députés de sa propre majorité le nomment de la sorte)",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/ferrand.jpg",
+    photoWin: "./images/ferrand.jpg",
   },
 
   {
@@ -110,8 +109,8 @@ const characters = [
       "J'aime les dîners fastueux et les bonnes bouteilles.",
     ],
     nickname: "l’arapède du Palais Bourbon",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/derugy.jpg",
+    photoWin: "./images/derugy.jpg",
   },
 
   {
@@ -123,8 +122,8 @@ const characters = [
       "Maman travaille 👩🏻‍💻",
     ],
     nickname: "Kim Kardashian (petit surnom donné par Brigitte)",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/happy-marlene.jpg",
+    photoWin: "./images/happy-marlene.jpg",
   },
 
   {
@@ -136,8 +135,8 @@ const characters = [
       "Dans la vie j'aime les armes !",
     ],
     nickname: "Papy Serge (paix à son âme)",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/happy-serge.jpeg",
+    photoWin: "./images/sad-serge.jpeg",
   },
 
   {
@@ -149,8 +148,8 @@ const characters = [
       "Quand on est emmerdé par une affaire, il faut susciter une affaire dans l’affaire, et si nécessaire une autre affaire dans l’affaire de l’affaire, jusqu’à ce que personne n’y comprenne plus rien",
     ],
     nickname: "le baron des Hauts-de-Seine (paix à son âme)",
-    photoLoose: "",
-    photoWin: "",
+    photoLoose: "./images/happy-pasqua.jpg",
+    photoWin: "./images/sad-pasqua.jpg",
   },
 
   // {
