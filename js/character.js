@@ -10,21 +10,6 @@ const characters = [
     nickname: "Patoche",
     photoLoose: "./images/happy-patrick.png",
     photoWin: "./images/patrick-balkany-chaunu.png",
-    // more: [
-    //   {
-    //     title: "Tout comprendre à l’affaire Balkany",
-    //     url: "https://www.lemonde.fr/les-decodeurs/article/2014/10/22/tout-comprendre-a-l-affaire-balkany_4510425_4355770.html",
-    //   },
-    //   {
-    //     title:
-    //       "Les juges dénoncent la fraude «à grande échelle» de Patrick Balkany",
-    //     url: "https://www.mediapart.fr/journal/france/100718/les-juges-denoncent-la-fraude-grande-echelle-de-patrick-balkany",
-    //   },
-    //   {
-    //     title: "Le fisc estime la fortune des Balkany à 16,5 millions d'euros ",
-    //     url: "https://www.mediapart.fr/journal/france/161015/le-fisc-estime-la-fortune-des-balkany-165-millions-deuros",
-    //   },
-    // ],
   },
   {
     name: "JEROME CAHUZAC",
@@ -65,7 +50,7 @@ const characters = [
   {
     name: "FRANCOIS FILLON",
     hints: [
-      "Sablé-sur-Sarth, ma circo, mon manoir, ma bataille.",
+      "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
       "I ❤️ Pénélope !",
       "Le Canard m'a tuer !",
       "J'aime les costumes bien taillés.",
@@ -74,7 +59,240 @@ const characters = [
     photoLoose: "./images/happy-francois.png",
     photoWin: "./images/sad-francois.png",
   },
+
+  // need to populate with pictures
+  {
+    name: "CLAUDE GUEANT",
+    hints: [
+      "J'ai fait un bref passage par la Santé.",
+      "L'argent liquide, je ne connais que ça : primes de cabinet, financements de campagne...",
+      "J'aime passer des coups de fil à Tripoli en passant par Beyrouth.",
+      "J'ai commencé directeur de cabinet de celui à qui je dois toutes mes affaires judiciaires, merci à lui !",
+    ],
+    nickname: "Monsieur 500 euros",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "ALEXANDRE BENALLA",
+    hints: [
+      "Je suis le garde du corps le plus connu de France",
+      "Je traîne pas mal avec des oligarques russes, j'aime bien ça, ils sont sympas !",
+      "Je suis le protégé de Brigitte",
+      "Je pense que je suis flic, mais en fait, non 🤷🏻 !",
+    ],
+    nickname: "Alex et sa bande",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "RICHARD FERRAND",
+    hints: [
+      "Si je vous dis : Crédit Mutuelle de Bretagne, vous me dites...",
+      "J'aime présider des choses : l'Assemblée Nationale, le groupe LREM...",
+      "Vous ne le savez pas, mais j'ai oeuvré à la cohésion des territoires, eh ouais !",
+      "Ils ont des chapeaux ronds, vive la Bretagne ! Ils ont des chapeaux ronds, vive les Bretons !",
+    ],
+    nickname:
+      "Richard Fillon (les députés de sa propre majorité le nomment de la sorte)",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "FRANCOIS DE RUGY",
+    hints: [
+      "Le homard ? Je n'en mange pas. J'ai une intolérance aux crustacés et aux fruits de mer 🦞",
+      "I ❤️ Séverine !",
+      "J'aime l'écologie et la Macronie aussi",
+      "J'aime les dîners fastueux et les bonnes bouteilles.",
+    ],
+    nickname: "l’arapède du Palais Bourbon",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "MARLENE SCHIAPPA",
+    hints: [
+      "Marianne, mon idôle que ce soit chez Playboy ou pour piquer dans la caisse.",
+      "Ce n'est pas de ma faute, ce sont mes collaborateurs qui sont incompétents",
+      "Je suis influenceuse lissage brésilien",
+      "Maman travaille 👩🏻‍💻",
+    ],
+    nickname: "Kim Kardashian (petit surnom donné par Brigitte)",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "SERGE DASSAULT",
+    hints: [
+      "Corbeil-Essones, mon fief, ma bataille",
+      "Un jour, sur un coup de tête j'ai racheté le Figaro !",
+      "Je suis le maître des rafales et des mirages",
+      "Dans la vie j'aime les armes !",
+    ],
+    nickname: "Papy Serge (paix à son âme)",
+    photoLoose: "",
+    photoWin: "",
+  },
+
+  {
+    name: "CHARLES PASQUA",
+    hints: [
+      "On m'appelle le baron des Hauts-de-Seine",
+      "En Corse, on n’a pas pour habitude de se dégonfler",
+      "Ah ça Jacquot : je l'ai bien couvert",
+      "Quand on est emmerdé par une affaire, il faut susciter une affaire dans l’affaire, et si nécessaire une autre affaire dans l’affaire de l’affaire, jusqu’à ce que personne n’y comprenne plus rien",
+    ],
+    nickname: "le baron des Hauts-de-Seine (paix à son âme)",
+    photoLoose: "",
+    photoWin: "",
+  },
+
   // {
-  //   name: "CLAUDE GUEANT",
+  //   name: "ALFRED SIRVEN",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "NICOLAS BAZIRE",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "CHRISTINE LAGARDE",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "THIERRY GAUBERT",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "DOMINIQUE STRAUSS KAHN",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "ERIC WOERTH",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "MARINE LE PEN",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "BRUNO LE ROUX",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "GERALD DARMANIN",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "DENIS BAUPIN",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
+  // },
+
+  // {
+  //   name: "ALEXIS KOHLER",
+  //   hints: [
+  //     "Sablé-sur-Sarthe, ma circo, mon manoir, ma bataille.",
+  //     "I ❤️ Pénélope !",
+  //     "Le Canard m'a tuer !",
+  //     "J'aime les costumes bien taillés.",
+  //   ],
+  //   nickname: "le Thatcher de la Sarthe",
+  //   photoLoose: "./images/happy-francois.png",
+  //   photoWin: "./images/sad-francois.png",
   // },
 ];
